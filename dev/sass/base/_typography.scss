@@ -1,0 +1,13 @@
+/* **************************** */
+/* TIPOGRAFIA */
+/* **************************** */
+
+@include font-face("arialregular", "arial-regular");
+@include font-face("arialblack", "arial-black");
+
+body
+{
+    font-family: $font-primary, $font-secondary, sans-serif;
+    font-size: $font-size-base;
+
+}

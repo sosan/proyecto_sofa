@@ -36,18 +36,43 @@
     <title>Practica Sofa</title>
   </head>
   <body>
-    <div id="container">
-      <!-- *** ESTRUCTURA SEMÁNTICA ***-->
-      <!-- Header (encabezado de la página, zona superior)-->
-      <!-- Encabezado-->
-      <header class="header"></header>
-      <!-- Main (centro de la página, zona central)-->
-      <main class="main">
-      </main>
-      <!-- Footer (final de la página, zona inferior)-->
-      <footer class="footer">
-        <h6>&copy; Copyright 2020 - Toni Ferra</h6>
-      </footer>
-    </div>
+    <section id="container">
+      <section id="derecha">
+        <!-- *** ESTRUCTURA SEMÁNTICA ***-->
+        <!-- Header (encabezado de la página, zona superior)-->
+        <!-- Encabezado-->
+        <header class="header">
+          <ul class="listadolinks__tabla">
+            <li class="tabla__elementoheader">
+              <nav class="header__listadolinks">
+                
+                <a class="elementoheader__link" href="#">Inicio</a>
+                <a class="elementoheader__link" href="productos.html">Productos</a>
+                <a class="elementoheader__link" href="quienes.html">Quienes Somos</a>
+              </nav>
+            </li>
+            <li class="tabla__elementofooter"><a class="elementofooter__link" href="contactar.html">Contactar</a></li>
+          </ul>
+        </header>
+      </section>
+      <section id="izquierda">
+        <!-- Main (centro de la página, zona central)-->
+        <main class="mainindex">
+          <article class="mainindex__articulo">
+            <h1 class="articulo__producto">Sofa</h1>
+            <p class="articulo__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ut nam sit iusto fuga asperiores eaque blanditiis iure maiores dolorem repudiandae vel rem sed quo, aut quam commodi aliquid cumque incidunt excepturi. Quia, sint illo consequatur nisi adipisci recusandae explicabo, quos et harum impedit beatae, voluptatum quibusdam? Praesentium, modi dolorum.</p>
+            <picture class="imagen__picture">
+              <!-- Smartphone-->
+              <source srcset="./assets/img/mobile/sofa_scandinavia@1x.webp 1x, ./assets/img/mobile/sofa_scandinavia@2x.webp 2x, ./assets/img/mobile/sofa_scandinavia@3x.webp 3x" media="(min-width:200px) and (max-width:767px)"/>
+              <!-- Tablet-->
+              <source srcset="./assets/img/tablet/sofa_scandinavia@1x.webp 1x, ./assets/img/tablet/sofa_scandinavia@2x.webp 2x" media="(min-width:768px) and (max-width:900px)"/>
+              <!-- Desktop-->
+              <source srcset="./assets/img/desktop/sofa_scandinavia@1x.webp 1x, ./assets/img/desktop/sofa_scandinavia@2x.webp 2x" media="(min-width:1000px)"/>
+              <img class="imagen__picture-imagen" src="./assets/img/mobile/sofa_scandinavia" alt="mejor sofa scandinavia"/>
+            </picture>
+          </article>
+        </main>
+      </section>
+    </section>
   </body>
 </html>

@@ -2,3 +2,76 @@
 /* INDEX */
 /* **************************** */
 
+body
+{
+    width: 100vw;
+    height: 100vh;
+
+}
+
+#container
+{
+    position: relative;
+}
+
+$wi: calc(881px / 2);
+$hi: calc(475px / 2);
+
+.imagen__picture
+{
+    position: absolute;
+    
+    // left: calc(50% - (#{$wi} / 2));
+    // top: calc(50% - (#{$hi} / 2));
+    top: calc(55% - (475px / 2));
+    left: calc(50% - (881px / 2));
+    z-index: 1;
+}
+
+
+.imagen__picture-imagen
+{
+    // width: $wi
+}
+
+.header
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+.header__listadolinks
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: calcularrem(65px);
+
+}
+
+
+.mainindex__articulo
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: calcularrem(23px);
+    
+}
+
+.articulo__descripcion
+{
+    max-width: calcularrem(500px);
+
+}
+
+.elementofooter__link
+{
+    @include boton-format($color-texto-base, $color-boton-base, 0, 10px, 24px);
+}

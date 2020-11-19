@@ -110,11 +110,12 @@
 }
 
 // ----- generar boton -------
-@mixin boton-format($colorTexto, $bg, $border: 0, $pad: 1rem) {
+@mixin boton-format($colorTexto, $bg, $border: 0, $pad: 1rem, $font-size: $font-size-base) {
     color: $colorTexto;
     background-color: $bg;
-    border: $border solid lighten($bg, 80%);
-    padding: $pad;
+    border: $border solid $bg;
+    padding: calcularrem($pad);
+    font-size: calcularrem($font-size) ;
 
 }
 
@@ -142,3 +143,17 @@
         color: $textcolorplaceholder;
     }
 }
+
+// @mixin calculate_position_center($alturaimagen, $anchoimagen)
+// {
+//     top: 50% - calcular($alturaimagen / 2);
+
+//     // top:  calc(50% - ($alturaimagen / 2));
+//     left: calc(50% - ($anchoimagen / 2));
+
+// }
+
+
+// @mixin calcular($property, $expression) {
+//     #{$property}: calc(#{$expression});
+// }

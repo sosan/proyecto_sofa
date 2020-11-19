@@ -19,15 +19,17 @@ html(lang=datasite["site"]["meta"]["default-language"])
         include _head.pug
 
     body
-        div#container
-            
-            // *** ESTRUCTURA SEMÁNTICA ***
-            // Header (encabezado de la página, zona superior)
-            // Encabezado
-            include _header.pug
-            
-            // Main (centro de la página, zona central)
-            main.main
+        
+        section#container
+
+            section#derecha
+                // *** ESTRUCTURA SEMÁNTICA ***
+                // Header (encabezado de la página, zona superior)
+                // Encabezado
+                include _header.pug
+            section#izquierda
+                // Main (centro de la página, zona central)
                 block main
-            // Footer (final de la página, zona inferior)
-            include _footer.pug
+
+                //- // Footer (final de la página, zona inferior)
+                //- include _footer.pug

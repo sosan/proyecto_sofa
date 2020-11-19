@@ -1,3 +1,18 @@
 /* **************************** */
 /* BOTONES */
 /* **************************** */
+
+.elementofooter__link 
+{
+    border-radius: 6px;
+    transition: transform 250ms ease-in-out;
+}
+
+.elementofooter__link:hover 
+{
+    transform: scale(1.10);
+}
+
+.elementofooter__link:active {
+    transform: scale(.9);
+}

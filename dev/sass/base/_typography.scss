@@ -9,5 +9,27 @@ body
 {
     font-family: $font-primary, $font-secondary, sans-serif;
     font-size: $font-size-base;
+    color: $color-texto-base;
+
+}
+
+.elementoheader__link
+{
+    font-size: calcularrem($font-size-medio);
+}
+
+
+.articulo__producto
+{
+    font-size: $font-size-grande;
+    font-family: $font-secondary;
+    line-height: calcularrem(90px);
+
+
+}
+
+.articulo__descripcion {
+    font-size: $font-size-base;
+    font-weight: bold;
 
 }
